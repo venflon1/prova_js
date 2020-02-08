@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Seconda applicazione javascript</title>
+  </head>
+  <body>
+      <h1>Secondo js</h1>
+      <button id="btn" onclick="clicca();">accendi</button>
+      <p id="display_paragrafo" style="width:300px; height:300px; border:1px solid black">
+        Lampadina spenta
+      </p>
+
+      <script type="text/javascript">
+          var state = 0;
+          function clicca(){
+              console.log("function clicca() - START");
+              console.log("state = " + state);
+              if(state == 0){
+                document.getElementById("display_paragrafo").style.backgroundColor="red";
+                document.getElementById("btn").innerHTML = "spegni";
+                document.getElementById("display_paragrafo").innerHTML = "Lampadina accesa";
+                state = 1;
+              }
+              else{
+                document.getElementById("display_paragrafo").style.backgroundColor = null;
+                document.getElementById("btn").innerHTML = "accendi";
+                document.getElementById("display_paragrafo").innerHTML = "Lampadina spenta";
+                state = 0;
+              }
+              console.log("function clicca() - END");
+          }
+      </script>
+  </body>
+</html>

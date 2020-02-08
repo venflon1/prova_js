@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Prima applicazione javascript</title>
+  </head>
+  <body>
+      <h1>Prima js</h1>
+      <button id="btn" onclick="cambia_colore();">clicca per cambiare colore</button>
+      <p id="display_paragrafo" style="width:300px; height:300px; border:1px solid black">
+        Paragrafo
+      </p>
+
+      <script type="text/javascript">
+
+          function cambia_colore(){
+              console.log("function cambia_colore() - START");
+              document.getElementById("display_paragrafo").style.backgroundColor="red";
+              console.log("function cambia_colore() - END");
+          }
+      </script>
+  </body>
+</html>
